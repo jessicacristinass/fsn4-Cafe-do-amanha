@@ -1,0 +1,115 @@
+.menu-container{
+    background-color: #cfa152;
+    color: #ffffff;
+    font-family: 'Merriweather', serif;
+    padding: 20px;
+    max-width: 100%;
+    margin: 0;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.menu-header{
+    text-align: center;
+    margin-bottom: 20px;
+    h1{
+        font-size: 3.3rem;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 10px;
+        color: #d6983b;
+        -webkit-text-stroke: 1px rgb(74, 43, 10);
+    }
+    p{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+        color: #f5a623;
+    }
+}
+
+.menu-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.menu-image{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 300px;
+    img{
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+        object-fit:  cover;
+        margin-bottom: 20px;
+    }
+}
+
+.menu-tabs{
+    flex: 1;
+    min-width: 100%;
+}
+
+ul.menu-list{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+ul.menu-list li{
+    display: flex;
+    justify-content: space-between;
+    color: #000000;
+    margin-bottom: 10px;
+    span{
+        font-weight: bold;
+    }
+}
+
+.nav-tabs .nav-link{
+        font-size: 1.5rem;
+        color: rgb(198, 102, 0);
+        margin: 2px;
+    }
+
+.nav-tabs .nav-link.active{
+    background-color: rgb(198, 102, 0);
+    color: rgb(74, 43, 10);
+    border: none;
+}
+
+.nav-tabs .nav-link:hover{
+    color: rgb(74, 43, 10);
+    background-color: #f5a623;
+
+}
+
+@media (max-width: 768px){
+    .menu-content{
+        flex-direction: column;
+        align-items: center;
+        .menu-image{
+            width: 100%;
+            img{
+                width: 70%;
+                max-width: 100%;
+                margin-bottom: 15px;
+            }
+        }
+    }
+
+    ul.menu-list li{
+        font-size: 0.9rem;
+    }
+
+    .nav-tabs .nav-link{
+        font-size: 1rem;
+    }
+
+    .menu-header h1{
+        font-size: 1.5rem;
+    }
+}

@@ -1,0 +1,64 @@
+.stories-section {
+    padding: 50px 20px;
+    background-color: #cfa152;
+    color: #4a2c2a;
+    text-align: center;
+}
+
+.container {
+    max-width: auto;
+}
+
+.stories-section h1 {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(74, 43, 10);
+}
+
+.stories-section p {
+    font-family: 'Georgia', serif;
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: justify;
+}
+
+.story-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+}
+
+.story {
+    background: url('../img/fundo-claro.jpg') no-repeat center center/cover;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.story h2 {
+    font-family: 'Georgia', serif;
+    font-size: 1.5rem;
+    color: rgb(74, 43, 10);
+    margin-bottom: 10px;
+}
+
+.story p {
+    font-family: 'Verdana', sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: black;
+}
+
+@media (min-width: 768px) {
+    .story-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (min-width: 1024px) {
+    .story-list {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

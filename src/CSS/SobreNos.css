@@ -1,0 +1,37 @@
+.sobre-section{
+    padding: 50px 20px;
+    background-color:#cfa152;
+    color: #4a2c2a;
+    text-align: center;
+    h1{
+        font-family: 'Brush Script MT', cursive;
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #8b5e3c;
+    }
+    p {
+        font-family: 'Georgia', serif;
+        font-size: 1.2rem;
+        line-height: 1.6;
+        margin-bottom: 30px;
+        text-align: justify;
+        margin-left: auto; 
+        margin-right: auto;
+        max-width: 80%;
+    }
+}
+
+.carousel{
+    margin-top: 30px;
+}
+
+@media (max-width: 768px){
+    .sobre-section h1{
+        font-size: 2rem;
+    }
+
+    .sobre-section p{
+        font-size: 1rem;
+        max-width: 90%;
+    }
+}
